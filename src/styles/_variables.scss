@@ -1,0 +1,61 @@
+@mixin bottomListStyle($icon_src, $listMargin, $liWidth) {
+    width: 212px;   
+    margin-left: $listMargin; 
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:  wrap;
+        justify-content: flex-end;
+
+        list-style-type: none;
+        height: 150px;
+        li:first-child{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: .808080;
+            .icon{
+                background-size: 24px;
+                width: 24px;
+                height: 24px;
+                background-image: url($icon_src);
+                margin-right: 23px;
+            }
+        }
+        li{
+            font-size: 13px;
+            margin-bottom: 10px;
+            font-weight: medium;
+            color: #B2B2B2;
+            width: $liWidth;
+            a{
+                font-size: 13px;
+                color: #B2B2B2;
+                text-decoration: none;
+                margin-left: 50px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .number{
+        font-size: 16px;
+        font-weight: bold;
+        color: .808080;
+        margin-left:50px;
+    }
+    .text{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@mixin cenetr-align-div-elemm() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

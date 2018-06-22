@@ -1,0 +1,153 @@
+@import '_variables';
+
+.header{
+    min-width: 800px;
+    height: 150px;
+}
+
+.headerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 88px;
+
+    .itemSearch{
+        width: 270px;
+        height: 50px;
+        margin: 20px 0px 18px 25px;
+        border: 2px solid #F5F5F5;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .searchIcon{
+        margin: 0px 0px 0px 23px;
+        height: 50px;
+        width: 30px;
+        background: url('../images/icons/ic_search.png') center no-repeat;
+        background-size: 30px 30px;
+    }
+    
+    .searchInput{
+        margin: 18px 0px 17px 34px; 
+        font-size: 12px;
+        font-weight: bold;
+        color: #B2B2B2;
+        border-style: none;
+        width: 170px;
+    }
+    
+    
+    .logo{
+        margin-left: 103px;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        border: 8px solid .0078FF;
+        border-radius: 24px;
+        align-self: center;         
+    }
+    
+    .userBar{
+        display: flex;
+        flex-direction: row;
+        color: #999999;
+        margin: 25px 30px 0px 0px;
+        height: 40px;
+        font-size: 13px;
+    
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            height: 40px;
+    
+            li{
+                font-weight: bold;
+                margin-top: auto;
+                margin-bottom: auto;
+                &:not(:first-child){
+                    margin-left:25px;
+                }
+    
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    color: #999999;
+                    height: 26px;   
+                    &:hover{
+                        text-decoration: underline;
+                        color: .808080;
+                    }
+    
+                    .favoriteIcon{
+                        background-image: url('../images/icons/favorite.png');
+                    }
+    
+                    .cartIcon{
+                        background-image: url('../images/icons/cart.png');                                 
+                    }
+    
+                    .compareIcon{
+                        background: url('../images/icons/compare.png');
+                    }
+    
+                    .favoriteIcon, .cartIcon, .compareIcon{
+                        width:26px; 
+                        background-position-y: center;
+                    }
+    
+                    .favoriteText, .cartText, .compareText{
+                        margin: auto;
+                        padding-left: 12px;   
+                    }
+                } 
+            }
+        } 
+    
+        .avatar{
+            margin: 0px 0px 0px 30px;
+            height: 40px;
+            width: 40px;
+            background: url('../images/icons/avatar.png') center no-repeat;
+        }
+    }
+}
+
+.headerBottom{
+        height: 58px;
+        border: 2px solid #F5F5F5;
+        border-left-style: none;
+        border-right-style: none;
+        display: flex;
+        justify-content: center;
+
+    .headerMenu{
+        margin-top: 23px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        color: .999999;
+
+        li{
+            font-size: 13px;
+            font-weight: bold;
+            &:not(:first-child){
+                margin-left:40px;
+            }
+            a{
+                text-decoration: none;
+                color: #999999;
+                &:hover{
+                    text-decoration: underline;
+                    color: .808080;
+                }
+            }
+        }
+    }
+}

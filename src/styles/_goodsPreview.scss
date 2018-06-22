@@ -1,0 +1,178 @@
+@import '_variables';
+
+.goodsBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 40px;
+    .goodsBarName{
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        .starIcon{
+            margin-left: 18px;
+            background: url('../images/icons/star.png') center;
+            width: 26px;
+        }
+        .interestingOffersText{
+            color: #808080;
+            margin: auto;
+            margin-left: 23px;
+            font-size: 18px;
+        }
+    }
+
+    .goodsType{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        font-weight: bold;
+        color: #B2B2B2;
+    }
+
+    .popularButton{
+        @include cenetr-align-div-elemm();
+        width: 85px;
+        height: 40px;
+        border: 2px solid #EBEBEB;
+        border-radius: 20px 0 0 20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .trendingButton{
+        @include cenetr-align-div-elemm();
+        width: 90px;
+        height: 40px;
+        border-top: 2px solid #EBEBEB;
+        border-bottom: 2px solid #EBEBEB;
+        background-color: WhiteSmoke;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .newButton{
+        @include cenetr-align-div-elemm();
+        width: 69px;
+        height: 40px;
+        border: 2px solid #EBEBEB;
+        border-radius: 0 20px 20px 0;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    .goodsSort{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .categoriesButton{
+        @include cenetr-align-div-elemm();
+        width: 120px;
+        height: 40px;
+        border: 2px solid #EBEBEB;
+        border-radius: 20px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        color: #B2B2B2;
+        &:hover{
+            cursor: pointer;
+        }
+        .arrowIcon{
+            margin-left: 18px;
+            background: url('../images/icons/arrow.png') center;
+            background-size: 8px 5px;
+            width: 8px;
+            height: 5px;
+        }    
+    }
+     
+    .dateButton{
+        @include cenetr-align-div-elemm();
+        width: 85px;
+        height: 40px;
+        border: 2px solid #EBEBEB;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        color: #B2B2B2;
+        &:hover{
+            cursor: pointer;
+        }
+        .arrowIcon{
+            margin-left: 5px;
+            background: url('../images/icons/arrow.png') center;
+            background-size: 8px 5px;
+            width: 8px;
+            height: 5px;
+        }
+    }
+}
+
+.goodsList{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #808080;
+    .good{
+        height: 330px;
+        width: 255px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        .goodGroup{
+            @include cenetr-align-div-elemm();
+            height: 50px;
+            margin: auto;
+            border-bottom: 2px solid #F5F5F5;
+            font-weight: medium;
+        }
+        .goodPhoto{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 143px;
+        }
+        .goodName{
+            @include cenetr-align-div-elemm();
+            height: 73px;
+            border-bottom: 2px solid #F5F5F5;
+            font-weight: medium;
+        }
+        .goodPrice{
+            @include cenetr-align-div-elemm();
+            height: 60px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.showMore{
+    @include cenetr-align-div-elemm();
+    height: 50px;
+    width: 100%;
+    margin-bottom: 35px;
+    .showMoreButton{
+        @include cenetr-align-div-elemm();
+        margin:auto 0px;
+        height: 50px;
+        width: 150px;
+        border: 2px solid #EBEBEB;
+        border-radius: 25px;
+        color: #B2B2B2;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

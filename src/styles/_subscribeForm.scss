@@ -1,0 +1,70 @@
+.subscribe{
+    height: 90px;
+    width: 100%;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: row;
+        .openedEnvelopeIcon{
+            margin-left: 32px;
+            background: url('../images/icons/opened_envelope.png') center no-repeat;
+            background-size: 32px;
+            height: 32px;
+            width: 32px;
+        }
+        .subscribeText{
+            margin: auto;
+            margin-left: 23px;
+            font-size: 14px;
+            font-weight: medium;
+            color: #808080;
+        }
+    }
+
+    .subscribeForm{
+        margin-left: 70px;
+        height: 50px;
+        width: 285px;
+        border: 2px solid #EBEBEB;
+        border-radius: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .closedEnvelopeIcon{
+            margin-left: 23px;
+            background: url('../images/icons/closed_envelope.png') center no-repeat;
+            background-size: 32px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+        
+    .emailInput{
+        margin-left: 38px;
+        width: 80px;
+        border: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .submitEmail{
+        background: linear-gradient(112.83deg, #FAD388 -34.94%, #F48A82 65.06%);
+        border: none;
+        border-radius: 20px;
+        width: 95px;
+        height: 40px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #999999;
+        margin-left: 8px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+            
+        
+}

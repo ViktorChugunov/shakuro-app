@@ -1,0 +1,55 @@
+@import '_variables';
+
+.footer{
+    width: 100%;
+    border-top: 1px solid #EBEBEB;
+}
+
+.footerTop{
+    margin: 0 auto;
+    width: 1110px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .usersList{
+        @include bottomListStyle('../images/icons/users.png', 8px, 200px);
+    }
+    .shoppingList{
+        @include bottomListStyle('../images/icons/shops.png', 220px, 150px);
+    }
+    .statisticList{
+        @include bottomListStyle('../images/icons/statistic.png', 200px, 180px);
+    }
+}
+
+.footerBottom{
+    border-top: 1px solid #EBEBEB;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        li{
+            &:not(:first-child){
+                margin-left: 40px;
+            }
+            a{
+                font-size: 13px;
+                color: #B2B2B2;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
