@@ -1,0 +1,71 @@
+.content
+  .slider
+    .slider-arrow-back
+    .slider-info
+      .slider-badge-button Badge
+      .slider-title The Best Place to Play
+      .slider-description Space The Final Frontier
+    .slider-arrow-forward
+  .products-preview
+    .products-bar
+      .product-bar-title
+        span.product-bar-title-star-icon
+        span.product-bar-title-text Interesting offers
+      .products-type
+        .popularButton Popular
+        .trendingButton Trending
+        .newButton New
+      .products-sorting
+        .categoriesButton Categories
+          span.categories-button-arrow-icon
+        .dateButton Date
+          span.date-button-arrow-icon 
+    .products-preview-list
+      -
+        var list = [
+          ["Recommend", "images/goods/Asus_ZenFone.png", "Asus ZenFone Go ZB452KG", "$ 384.4"],
+          ["Bestseller", "images/goods/Xiaomi_Mi.png", "Xiaomi Mi Band 2", "$ 384.4"],
+          ["Goods of the week", "images/goods/LG_43UH610V.png", "LG 43UH610V", "$ 384.4"],
+          ["Recommend", "images/goods/Apple_mac_27.png", "Apple iMac 27 Retina 5K", "$ 384.4"],
+          ["New product", "images/goods/Asus_Condi.png", "Asus Condi ZB452KG", "$ 384.4"],
+          ["Recommend", "images/goods/Electrolux_EZB.png", "Electrolux EZB 52410 AK", "$ 384.4"],
+          ["Bestseller", "images/goods/Beats_studio.png", "Beats studio wireless", "$ 384.4"],
+          ["Recommend", "images/goods/Nikon_D3300.png", "Nikon D3300 Kit", "$ 384.4"]
+        ];
+      - for (var x = 0; x < list.length; x++)
+        .products-preview-list-item
+          .product-group= list[x][0]
+          .product-photo
+            img(src= list[x][1])
+          .product-name=  list[x][2]
+          .product-price= list[x][3]
+    .show-more-products-box
+      .show-more-products-button Show More
+  .subscribe-box
+    .subscribe-box-title
+      .subscribe-box-title-opened-envelope-icon
+      .subscribe-box-title-text Learn about profitable offers and get personal recommendations
+    .subscribe-box-field
+        .subscribe-box-form-closed-envelope-icon
+        input.subscribe-box-email-input(type="email" placeholder="Your e-mail")
+        input.subscribe-box-submit(type="submit" value="Subscribe")
+  .viewed-products-box
+    .viewed-products-box-title
+      .viewed-products-box-eye-icon
+      .viewed-products-box-title Recently viewed products
+    .viewed-products-list
+      -
+        var list = [
+          ["Apple iPhone 7", "images/goods/viewedProduct1.png", "$ 670", "/products/product1"],
+          ["LG 43UH610V", "images/goods/viewedProduct2.png", "$ 545", "/products/product2"],
+          ["LG G6 H870DS", "images/goods/viewedProduct3.png", "$ 545", "/products/product3"],
+          ["Asus ZenFone", "images/goods/viewedProduct4.png", "$ 545", "/products/product4"],
+        ];
+      - for (var x = 0; x < list.length; x++)
+        .viewed-products-list-item
+          .viewed-products-image
+            img(src= list[x][1])
+          .viewed-products-info
+            .viewed-product-name
+              a.viewed-product-item-link(href= list[x][3])= list[x][0]
+            .viewed-product-price= list[x][2]

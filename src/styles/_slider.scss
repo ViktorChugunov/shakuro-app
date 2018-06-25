@@ -1,0 +1,71 @@
+@import '_variables';
+@import '_mixins';
+
+.slider{
+  width: $content-width;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  height: 330px;
+  background: url('../images/sidebar_image.png') no-repeat;
+  background-size: 1100px 330px;
+}
+
+.slider-arrow-back{
+  background: url('../images/icons/ic_arrow_back.png') center no-repeat;
+  margin-left: 30px;
+}
+
+.slider-arrow-forward{
+  background: url('../images/icons/ic_arrow_forward.png') center no-repeat;
+  margin-right: 30px;
+}
+
+.slider-arrow-back, .slider-arrow-forward{
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 30px;
+  background-size: 30px 30px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.slider-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-badge-button{
+  @include cenetr-align-div-elemm();
+  color: #FFFFFF;
+  width: 90px;
+  height: 30px;
+  font-size: 12px;
+  font-family: 'Roboto-Bold'; 
+  background-color: #FF004F;
+  border-radius: 15px;
+  margin-bottom: 53px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.slider-title{
+  color: #FFFFFF;
+  font-size: 36px;
+  font-family: 'Roboto-Bold'; 
+  margin-bottom: 60px;
+}
+
+.slider-description{
+  color: #FFFFFF;
+  font-size: 14px;
+  opacity: .6;
+}    

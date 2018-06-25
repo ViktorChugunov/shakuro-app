@@ -1,0 +1,75 @@
+@import '_variables';
+@import '_mixins';
+
+.subscribe-box{
+  height: 90px;
+  width: 100%;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-box-title{
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-box-title-opened-envelope-icon{
+  margin-left: 32px;
+  background: url('../images/icons/opened_envelope.png') center no-repeat;
+  background-size: 32px;
+  height: 32px;
+  width: 32px;
+}
+
+.subscribe-box-title-text{
+  margin: auto;
+  margin-left: 23px;
+  font-size: 14px;
+  color: #808080;
+}
+    
+.subscribe-box-field{
+  margin-left: 70px;
+  height: 50px;
+  width: 285px;
+  border: 2px solid #EBEBEB;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.subscribe-box-form-closed-envelope-icon{
+  margin-left: 23px;
+  background: url('../images/icons/closed_envelope.png') center no-repeat;
+  background-size: 32px;
+  height: 32px;
+  width: 32px;
+}
+  
+        
+.subscribe-box-email-input{
+  margin-left: 10px;
+  width: 110px;
+  border: none;
+  font-size: 12px;
+  font-family: 'Roboto-Bold';
+}
+
+.subscribe-box-submit{
+  background: linear-gradient(112.83deg, #FAD388 -34.94%, #F48A82 65.06%);
+  border: none;
+  border-radius: 20px;
+  width: 95px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+  margin-left: 10px;
+  &:hover{
+    cursor: pointer;
+  }
+}

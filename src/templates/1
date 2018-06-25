@@ -1,0 +1,38 @@
+.user-list-box
+      ul.footer-top-list
+        li.footer-top-list-item
+          span.icon
+          span.text Users
+        -
+          var list = [
+            ["Payment", "/electronics"], ["Delivery", "/appliances"], ["Return and exchange", "/childens_goods"], 
+            ["Help with the service", "/repair"], ["Terms of use", "/clothes"], ["Feedback", "/footwear"]
+          ];
+        - for (var x = 0; x < list.length; x++)
+          li.footer-top-list-item
+            a.footer-top-list-item-link(href=list[x][1])= list[x][0]
+    .shopping-list-box
+      ul.footer-top-list
+        li.footer-top-list-item
+          span.icon
+          span.text Shopping
+        -
+          var list = [
+            ["Connectivity", "/electronics"], ["Help for shops", "/appliances"], ["Dashboard", "/childens_goods"], 
+            ["Storehouse", "/repair"], ["Terms of use", "/clothes"], ["Feedback", "/footwear"]
+          ];
+        - for (var x = 0; x < list.length; x++)
+          li.footer-top-list-item
+            a.footer-top-list-item-link(href=list[x][1])= list[x][0]
+    .statistic-list-box
+      ul.footer-top-list
+        li.footer-top-list-item
+          span.icon
+          span.text Statistic
+        li.footer-top-list-item
+          span.number 453 034 
+          span.text Goods
+        li.footer-top-list-item
+          span.number 2 545 
+          span.text Shops
+        li.footer-top-list-item-align

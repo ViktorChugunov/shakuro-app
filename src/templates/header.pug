@@ -1,0 +1,26 @@
+.header
+  .header-top
+    .header-search-box
+      .header-search-icon
+      form
+        input.header-search-input(type="text" placeholder="Search goods...")
+    .header-logo
+    .header-user-bar
+      ul.header-user-bar-list
+        - var list = [ ["favorite", "/favorite_products"], ["compare", "/compare_products"], ["cart", "/cart"] ];
+        - for (var x = 0; x < list.length; x++)
+          li.header-user-bar-list-item
+            a.header-user-bar-list-item-link(href=list[x][1])
+              span(class= 'header-user-bar-list-item-icon-' + list[x][0])
+              span.header-user-bar-list-item-text #{list[x][0][0].toUpperCase() + list[x][0].substr(1).toLowerCase ()}
+      .header-user-bar-avatar
+  .header-bottom
+    ul.header-menu
+      - 
+        var list = [
+          ["Electronics", "/electronics"], ["Appliances", "/appliances"], ["Childen's goods", "/childens_goods"], 
+          ["Repair", "/repair"], ["Clothes", "/clothes"], ["Footwear", "/footwear"], ["Beauty", "/beauty"]
+        ];
+      - for (var x = 0; x < list.length; x++)
+        li.header-menu-list-item
+          a.header-menu-list-item-link(href=list[x][1])= list[x][0]
