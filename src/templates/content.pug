@@ -39,8 +39,9 @@
             img(src= list[x][1])
           .product-name=  list[x][2]
           .product-price= list[x][3]
-    .show-more-products-box
-      .show-more-products-button Show More
+      #added-products
+      .show-more-products-box
+      .show-more-products-button(onClick="showMoreProducts()") Show More
   .subscribe-box
     .subscribe-box-title
       .subscribe-box-title-opened-envelope-icon
