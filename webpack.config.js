@@ -6,6 +6,7 @@ var path = require("path");
 module.exports = {
   entry: ['./src/index.js', 
           './src/index.pug',
+          './src/styles/style.scss'
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -76,6 +77,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: 'index.html'
-    })
+    }),
   ]
 };

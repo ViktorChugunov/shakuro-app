@@ -53,5 +53,103 @@
     "product_group":"Recommend",
     "img_src":"images/goods/Nikon_D3300.png",
     "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"electronics", 
+    "product_group":"Recommend", 
+    "img_src":"images/goods/Asus_ZenFone.png", 
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"electronics",
+    "product_group":"Recommend",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"electronics", 
+    "product_group":"Recommend", 
+    "img_src":"images/goods/Asus_ZenFone.png", 
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"electronics",
+    "product_group":"Recommend",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"electronics", 
+    "product_group":"Recommend", 
+    "img_src":"images/goods/Asus_ZenFone.png", 
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"electronics",
+    "product_group":"Recommend",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"electronics", 
+    "product_group":"Recommend", 
+    "img_src":"images/goods/Asus_ZenFone.png", 
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"electronics",
+    "product_group":"Bestseller", 
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
   }
 ]

@@ -41,7 +41,7 @@
   color: #B2B2B2;
 }
 
-.popularButton{
+.popular-button{
   @include cenetr-align-div-elemm();
   width: 85px;
   height: 40px;
@@ -52,7 +52,7 @@
   }
 }
 
-.trendingButton{
+.trending-button{
   @include cenetr-align-div-elemm();
   width: 90px;
   height: 40px;
@@ -63,7 +63,7 @@
   }
 }
 
-.newButton{
+.new-button{
   @include cenetr-align-div-elemm();
   width: 69px;
   height: 40px;
@@ -81,7 +81,7 @@
   font-family: 'Roboto-Bold'; 
 }
 
-.categoriesButton{
+.categories-button{
   @include cenetr-align-div-elemm();
   width: 120px;
   height: 40px;
@@ -105,7 +105,7 @@
   margin-left: 18px;
 }
      
-.dateButton{
+.date-button{
   @include cenetr-align-div-elemm();
   width: 85px;
   height: 40px;
@@ -135,6 +135,20 @@
   justify-content: center;
   flex-wrap: wrap;
   color: #808080;
+}
+
+#added-products{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.added-products{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .products-preview-list-item{

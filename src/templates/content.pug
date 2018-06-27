@@ -12,15 +12,16 @@
         span.product-bar-title-star-icon
         span.product-bar-title-text Interesting offers
       .products-type
-        .popularButton Popular
-        .trendingButton Trending
-        .newButton New
+        .popular-button Popular
+        .trending-button Trending
+        .new-button New
       .products-sorting
-        .categoriesButton Categories
+        .categories-button Categories
           span.categories-button-arrow-icon
-        .dateButton Date
+        .date-button Date
           span.date-button-arrow-icon 
     .products-preview-list
+    //
       -
         var list = [
           ["Recommend", "images/goods/Asus_ZenFone.png", "Asus ZenFone Go ZB452KG", "$ 384.4"],
@@ -41,7 +42,7 @@
           .product-price= list[x][3]
       #added-products
       .show-more-products-box
-      .show-more-products-button(onClick="showMoreProducts()") Show More
+        .show-more-products-button(onClick="showMoreProducts()") Show More
   .subscribe-box
     .subscribe-box-title
       .subscribe-box-title-opened-envelope-icon
