@@ -1,0 +1,37 @@
+.content
+  .slider
+    .slider-arrow-back
+    .slider-info
+      .slider-badge-button Badge
+      .slider-title The Best Place to Play
+      .slider-description Space The Final Frontier
+    .slider-arrow-forward
+  .products-preview-box
+  .subscribe-box
+    .subscribe-box-title
+      .subscribe-box-title-opened-envelope-icon
+      .subscribe-box-title-text Learn about profitable offers and get personal recommendations
+    .subscribe-box-field
+        .subscribe-box-form-closed-envelope-icon
+        input.subscribe-box-email-input(type="email" placeholder="Your e-mail")
+        input.subscribe-box-submit(type="submit" value="Subscribe")
+  .viewed-products-box
+    .viewed-products-box-title
+      .viewed-products-box-eye-icon
+      .viewed-products-box-title Recently viewed products
+    .viewed-products-list
+      -
+        var list = [
+          ["Apple iPhone 7", "images/goods/viewedProduct1.png", "$ 670", "/products/product1"],
+          ["LG 43UH610V", "images/goods/viewedProduct2.png", "$ 545", "/products/product2"],
+          ["LG G6 H870DS", "images/goods/viewedProduct3.png", "$ 545", "/products/product3"],
+          ["Asus ZenFone", "images/goods/viewedProduct4.png", "$ 545", "/products/product4"],
+        ];
+      - for (var x = 0; x < list.length; x++)
+        .viewed-products-list-item
+          .viewed-products-image
+            img(src= list[x][1])
+          .viewed-products-info
+            .viewed-product-name
+              a.viewed-product-item-link(href= list[x][3])= list[x][0]
+            .viewed-product-price= list[x][2]

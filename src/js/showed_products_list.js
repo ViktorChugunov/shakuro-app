@@ -7,42 +7,44 @@ export class ShowedProductsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numberOfShowedProducts: 8,
+      numberOfShowingProducts: 8,
       displayButton: { },
       numberOfClickOnShowMoreButtons: 0
     }
     this.showMoreProducts = this.showMoreProducts.bind(this);
   }
   showMoreProducts() {
-    let numberOfShowedProducts = this.state.numberOfShowedProducts;
-    numberOfShowedProducts += 8;
-    if (numberOfShowedProducts >= products_db.length){
-      numberOfShowedProducts = products_db.length;
+    let numberOfShowingProducts = this.state.numberOfShowingProducts;
+    numberOfShowingProducts += 8;
+    if (numberOfShowingProducts >= products_db.length){
+      numberOfShowingProducts = products_db.length;
       this.setState({displayButton: {display: 'none'}})
     }
-    this.setState({numberOfShowedProducts: numberOfShowedProducts})
+    this.setState({numberOfShowingProducts: numberOfShowingProducts})
   }
   render() {
     const productLineList = [];
     var numberOfAddedProducts = 0;
     this.state.numberOfClickOnShowMoreButtons++;
     if (!this.props.showPopularProducts&&!this.props.showTrendingProducts&&!this.props.showNewProducts){
-      for (let productId = 0; productId < this.state.numberOfShowedProducts; productId++){
+      for (let productId = 0; productId < this.state.numberOfShowingProducts; productId++){
         productLineList.push(<ProductsPreviewListItem productId={productId} />);
       }
     }
     else{
-      for (let productId = 0; numberOfAddedProducts<this.state.numberOfShowedProducts || productId<products_db.length; productId++){
+      for (let productId = 0; numberOfAddedProducts<this.state.numberOfShowingProducts && productId<products_db.length; productId++){
         if(this.props.showPopularProducts&&products_db[productId]['product_group']=='Bestseller'){
           productLineList.push(<ProductsPreviewListItem productId={productId} />);
+          numberOfAddedProducts++;
         }
         else if(this.props.showTrendingProducts&&(products_db[productId]['product_group']=='Goods of the week'||products_db[productId]['product_group']=='Recommend')){
           productLineList.push(<ProductsPreviewListItem productId={productId} />);
+          numberOfAddedProducts++;
         }
         else if(this.props.showNewProducts&&products_db[productId]['product_group']=='New product'){
           productLineList.push(<ProductsPreviewListItem productId={productId} />);
-        }
-        numberOfAddedProducts++;
+          numberOfAddedProducts++;
+        }        
       }
     }
     return (

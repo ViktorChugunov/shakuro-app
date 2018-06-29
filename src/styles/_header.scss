@@ -26,8 +26,8 @@
   width: 270px;
   height: 50px;
   &:before {
-    background: url('../images/icons/ic_search.png') center no-repeat;
-    background-size: 30px 30px;
+    background: url('../images/icons/icons.png') no-repeat;
+    background-position: -258px 0;
     content: '';
     position: absolute; 
     top: 50%; 
@@ -70,7 +70,7 @@
 }
 
 .header-logo{
-  margin-left: 85px;
+  margin-left: 95px;
   min-width: 24px;
   width: 24px;
   height: 24px;
@@ -110,7 +110,7 @@
   flex-direction: row;
   text-decoration: none;
   color: #999999;
-  height: 26px;   
+  height: 30px;   
   &:hover{
     text-decoration: underline;
     color: #808080;
@@ -118,21 +118,21 @@
 }
 
 .header-user-bar-list-item-icon-favorite{
-  width:26px; 
-  background-image: url('../images/icons/favorite.png');
-  background-position-y: center;
+  width:30px; 
+  background-image: url('../images/icons/icons.png');
+  background-position: -168px 0;
 }
 
 .header-user-bar-list-item-icon-cart{
-  width:26px; 
-  background-image: url('../images/icons/cart.png');
-  background-position-y: center;                               
+  width:30px; 
+  background-image: url('../images/icons/icons.png');
+  background-position: -48px 0;                             
 }
 
 .header-user-bar-list-item-icon-compare{
-  width:26px; 
-  background: url('../images/icons/compare.png');
-  background-position-y: center;
+  width:30px; 
+  background: url('../images/icons/icons.png');
+  background-position: -108px 0;
 }
 
 .header-user-bar-list-item-text{
@@ -144,7 +144,8 @@
   margin: 0 0 0 30px;
   height: 40px;
   width: 40px;
-  background: url('../images/icons/avatar.png') center no-repeat;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -8px 0;
 }
 
 .header-bottom{

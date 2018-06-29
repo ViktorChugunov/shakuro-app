@@ -1,26 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-require('./js/showed_products_list.js');
-
 import {ShowedProductsList} from './js/showed_products_list.js'
-
-//const products_db = require('./products_db.json');
-
-/*
-class ProductsPreview extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-        <ProductsBar />
-        <ShowedProducts showPopularProducts={false} showTrendingProducts={false} showNewProducts={false}/>
-      </div>
-    );
-  }
-}
-*/
+require('./js/showed_products_list.js');
 
 class ProductsBar extends React.Component {
   constructor(props) {
@@ -29,18 +10,78 @@ class ProductsBar extends React.Component {
       showPopularProducts: false,
       showTrendingProducts: false,
       showNewProducts: false,
+      popularButtonClass: 'popular-button',
+      trendingButtonClass: 'trending-button',
+      newButtonClass: 'new-button',
       categories: [],
       dateAsc: true
     }
   }
   showPopularProducts(){
-    this.setState({showPopularProducts: !this.state.showPopularProducts, showTrendingProducts: false, showNewProducts: false});
+    if (this.state.showPopularProducts){
+      this.setState({ 
+        popularButtonClass: 'popular-button', 
+        trendingButtonClass: 'trending-button', 
+        newButtonClass: 'new-button',
+        showPopularProducts: false, 
+        showTrendingProducts: false, 
+        showNewProducts: false
+      });
+    }
+    else{
+      this.setState({
+        popularButtonClass: 'popular-button active', 
+        trendingButtonClass: 'trending-button', 
+        newButtonClass: 'new-button',
+        showPopularProducts: true, 
+        showTrendingProducts: false, 
+        showNewProducts: false
+      });
+    }
   }
   showTrendingProducts(){
-    this.setState({showPopularProducts: false, showTrendingProducts: !this.state.showTrendingProducts, showNewProducts: false});
+    if (this.state.showTrendingProducts){
+      this.setState({ 
+        popularButtonClass: 'popular-button', 
+        trendingButtonClass: 'trending-button', 
+        newButtonClass: 'new-button',
+        showPopularProducts: false, 
+        showTrendingProducts: false, 
+        showNewProducts: false
+      });
+    }
+    else{
+      this.setState({
+        popularButtonClass: 'popular-button', 
+        trendingButtonClass: 'trending-button active', 
+        newButtonClass: 'new-button',
+        showPopularProducts: false, 
+        showTrendingProducts: true, 
+        showNewProducts: false
+      });
+    }
   }
   showNewProducts(){
-    this.setState({showPopularProducts: false, showTrendingProducts: false, showNewProducts: !this.state.showNewProducts});
+    if (this.state.showNewProducts){
+      this.setState({ 
+        popularButtonClass: 'popular-button', 
+        trendingButtonClass: 'trending-button', 
+        newButtonClass: 'new-button',
+        showPopularProducts: false, 
+        showTrendingProducts: false, 
+        showNewProducts: false
+      });
+    }
+    else{
+      this.setState({
+        popularButtonClass: 'popular-button', 
+        trendingButtonClass: 'trending-button', 
+        newButtonClass: 'new-button active',
+        showPopularProducts: false, 
+        showTrendingProducts: false, 
+        showNewProducts: true
+      });
+    }
   }
   showProductsFromCategory(){
     alert("showProductsFromCategory");
@@ -57,13 +98,19 @@ class ProductsBar extends React.Component {
             <span className="product-bar-title-text">Interesting offers</span>
           </div>
           <div className="products-type">
-            <div className="popular-button" onClick={() => this.showPopularProducts()}>Popular</div>
-            <div className="trending-button" onClick={() => this.showTrendingProducts()}>Trending</div>
-            <div className="new-button" onClick={() => this.showNewProducts()}>New</div>
+            <div className={this.state.popularButtonClass} onClick={() => this.showPopularProducts()}>Popular</div>
+            <div className={this.state.trendingButtonClass} onClick={() => this.showTrendingProducts()}>Trending</div>
+            <div className={this.state.newButtonClass} onClick={() => this.showNewProducts()}>New</div>
           </div>
           <div className="products-sorting">
-            <div className="categories-button" onClick={() => this.showProductsFromCategory()}>
-              Categories<span class="categories-button-arrow-icon"></span>
+            <div className="select-category-box">
+              <select class="select-category" name="categories[]">
+                <option disabled selected>Categories</option>
+                <option value="Audio">Audio</option>
+                <option value="TV">TV</option>
+                <option value="Smartphone">Smartphone</option>
+                <option value="PC">PC</option>
+              </select>
             </div>
             <div className="date-button" onClick={() => this.sortProductsByDate()}>
               Date<span class="date-button-arrow-icon"></span>
