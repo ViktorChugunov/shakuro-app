@@ -1,0 +1,36 @@
+//
+  .products-bar
+        .product-bar-title
+          span.product-bar-title-star-icon
+          span.product-bar-title-text Interesting offers
+        .products-type
+          .popular-button Popular
+          .trending-button Trending
+          .new-button New
+        .products-sorting
+          .categories-button Categories
+            span.categories-button-arrow-icon
+          .date-button Date
+            span.date-button-arrow-icon 
+      .products-preview-list
+        -
+          var list = [
+            ["Recommend", "images/goods/Asus_ZenFone.png", "Asus ZenFone Go ZB452KG", "$ 384.4"],
+            ["Bestseller", "images/goods/Xiaomi_Mi.png", "Xiaomi Mi Band 2", "$ 384.4"],
+            ["Goods of the week", "images/goods/LG_43UH610V.png", "LG 43UH610V", "$ 384.4"],
+            ["Recommend", "images/goods/Apple_mac_27.png", "Apple iMac 27 Retina 5K", "$ 384.4"],
+            ["New product", "images/goods/Asus_Condi.png", "Asus Condi ZB452KG", "$ 384.4"],
+            ["Recommend", "images/goods/Electrolux_EZB.png", "Electrolux EZB 52410 AK", "$ 384.4"],
+            ["Bestseller", "images/goods/Beats_studio.png", "Beats studio wireless", "$ 384.4"],
+            ["Recommend", "images/goods/Nikon_D3300.png", "Nikon D3300 Kit", "$ 384.4"]
+          ];
+        - for (var x = 0; x < list.length; x++)
+          .products-preview-list-item
+            .product-group= list[x][0]
+            .product-photo
+              img(src= list[x][1])
+            .product-name=  list[x][2]
+            .product-price= list[x][3]
+        #added-products
+        .show-more-products-box
+          .show-more-products-button(onClick="showMoreProducts()") Show More

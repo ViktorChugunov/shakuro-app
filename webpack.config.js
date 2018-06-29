@@ -41,12 +41,6 @@ module.exports = {
         loader: "haml-loader"
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-            'url-loader'
-        ]
-      },
-      {
         test: /\.pug/,
         loaders: [
             'html-loader',
@@ -54,13 +48,19 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader']
-      },
-      {
         test: /\.jsx$/,
         exclude: /node_modules/,
         loader: "babel-loader"
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+            'url-loader'
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader']
       }
     ]
   },

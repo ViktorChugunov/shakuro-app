@@ -19,8 +19,6 @@
   border-radius: 25px;
   width: 270px;
   border: 2px solid #F5F5F5;
-  //display: flex;
-  //flex-direction: row;
 }
 
 .search-form{
@@ -33,47 +31,31 @@
     content: '';
     position: absolute; 
     top: 50%; 
-    left: 25px;
+    left: 23px;
     display: block; 
     width: 30px; 
     height: 30px;
-    margin: -12px 0px 0px 0px;
+    margin: -15px 0px 0px 0px;
     border: none;
-    //position: absolute; top: 50%; left: 25px;
-    //display: block; width: 24px; height: 24px;
-    //margin: -12px 0px 0px 0px;
   }
 }
 
-.header-search-icon{
-  margin: 0 0 0 23px;
-  height: 50px;
-  width: 30px;
-  border: none;
-  //background: url('../images/icons/ic_search.png') center no-repeat;
-  //background-size: 30px 30px;
-  &:hover{
-    cursor: pointer;
-  }
-}
-
-.header-search-input{
-  //margin: 18px 0 17px 34px; 
+.search-form input[type=text]{
   font-size: 12px;
   font-family: 'Roboto-Medium', sans-serif;
-  padding-left: 60px;
+  padding-left: 71px;
   padding-right: 24px;
   color: #B2B2B2;
   height: 50px;
-  width: 270px;
+  width: 100%;
   border-style: none;
   display: block;
   background: none;
+  box-sizing: border-box;
   border-radius: 25px;
 }
 
 .search-form input[type=submit]{
-  //visibility: hidden;
   width: 30px; 
   height: 30px;
   position: relative;
@@ -88,7 +70,7 @@
 }
 
 .header-logo{
-  margin-left: 103px;
+  margin-left: 85px;
   min-width: 24px;
   width: 24px;
   height: 24px;
