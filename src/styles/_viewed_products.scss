@@ -64,8 +64,16 @@
 }
 
 .viewed-product-name{
+  width: 145px;
   color: #808080;
   margin-bottom: 18px;
+}
+
+.viewed-product-name > p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
 }
 
 .viewed-product-item-link{
@@ -77,6 +85,14 @@
 }
 
 .viewed-product-price{
-  font-family: 'Roboto-Bold';
+  width: 145px;
+  font-family: $boldFontFamily;
   color: #B2B2B2;
+}
+
+.viewed-product-price > p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
 }

@@ -1,11 +1,5 @@
 .content
-  .slider
-    .slider-arrow-back
-    .slider-info
-      .slider-badge-button Badge
-      .slider-title The Best Place to Play
-      .slider-description Space The Final Frontier
-    .slider-arrow-forward
+  .slider-box
   .products-preview-box
   .subscribe-box
     .subscribe-box-title
@@ -33,5 +27,7 @@
             img(src= list[x][1])
           .viewed-products-info
             .viewed-product-name
-              a.viewed-product-item-link(href= list[x][3])= list[x][0]
-            .viewed-product-price= list[x][2]
+              p
+                a.viewed-product-item-link(href= list[x][3])= list[x][0]
+            .viewed-product-price
+              p= list[x][2]

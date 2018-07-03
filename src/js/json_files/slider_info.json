@@ -1,0 +1,47 @@
+[
+  {
+    "slider-badge-button":"Badge",
+    "slider-badge-button-style":"#FFFFFF",
+    "slider-title":"The Best Place to Play",
+    "slider-title-style":"#FFFFFF",
+    "slider-description":"Space The Final Frontier",
+    "slider-description-style":"rgba(255, 255, 255, .6)",
+    "img_src":"images/slider/slide-1.png"
+  },
+  {
+    "slider-badge-button":"Buy",
+    "slider-badge-button-style":"#FFFFFF",
+    "slider-title":"Air conditioning drop in prices",
+    "slider-title-style":"#FF0000",
+    "slider-description":"Up to 30% discount on LG air conditioning",
+    "slider-description-style":"rgba(0, 0, 0, .8)",
+    "img_src":"images/slider/slide-2.png"
+  },
+  {
+    "slider-badge-button":"Buy",
+    "slider-badge-button-style":"#FFFFFF",
+    "slider-title":"QLED TV",
+    "slider-title-style":"#FFFFFF",
+    "slider-description":"Now TV picture is more realistic than ever",
+    "slider-description-style":"rgba(255, 255, 255, 1)",
+    "img_src":"images/slider/slide-3.png"
+  },
+  {
+    "slider-badge-button":"Buy",
+    "slider-badge-button-style":"#FFFFFF",
+    "slider-title":"New generetion of slim laptops",
+    "slider-title-style":"rgba(255, 0, 255, 1)",
+    "slider-description":"Look at newest Lenovo laptop series!",
+    "slider-description-style":"#000000",
+    "img_src":"images/slider/slide-4.png"
+  },
+  {
+    "slider-badge-button":"Buy",
+    "slider-badge-button-style":"#FFFFFF",
+    "slider-title":"Free access to AppMusic",
+    "slider-title-style":"#FFFFFF",
+    "slider-description":"Buy iPhone X and use AppMusic for free",
+    "slider-description-style":"rgba(0, 0, 0, 1)",
+    "img_src":"images/slider/slide-5.png"
+  }
+]

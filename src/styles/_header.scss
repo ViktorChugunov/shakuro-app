@@ -42,7 +42,7 @@
 
 .search-form input[type=text]{
   font-size: 12px;
-  font-family: 'Roboto-Medium', sans-serif;
+  font-family: $mediumFontFamily;
   padding-left: 71px;
   padding-right: 24px;
   color: #B2B2B2;
@@ -53,6 +53,10 @@
   background: none;
   box-sizing: border-box;
   border-radius: 25px;
+  &::placeholder {
+    color: #B2B2B2;
+    opacity: 1;
+  }
 }
 
 .search-form input[type=submit]{
@@ -70,14 +74,25 @@
 }
 
 .header-logo{
-  margin-left: 95px;
-  min-width: 24px;
-  width: 24px;
-  height: 24px;
+  min-width: 40px;
+  height: 40px;
   border: 8px solid #0078FF;
-  border-radius: 24px;
-  align-self: center;         
+  border-radius: 50%;
+  align-self: center;
+  position: relative;
+  left: 50px;
+  transition: 0.5s;
+  &:hover{
+    border-color: #0024FF;
+  }
 }
+/*
+.header-logo-link{
+  width: 40px;
+  height: 40px;
+  display: block;
+  height: 100%;
+}*/
 
 .header-user-bar{
   display: flex;
@@ -150,9 +165,10 @@
 
 .header-bottom{
   height: 58px;
-  border: 2px solid #F5F5F5;
-  border-left-style: none;
-  border-right-style: none;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #EBEBEB;
+  //border-left-style: none;
+  //border-right-style: none;
   display: flex;
   justify-content: center;
 }
@@ -168,7 +184,7 @@
 
 .header-menu-list-item{
   font-size: 13px;
-  font-family: 'Roboto-Medium'; 
+  font-family: $mediumFontFamily; 
   &:not(:first-child){
     margin-left:40px;
   }

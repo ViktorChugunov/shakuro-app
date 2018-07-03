@@ -1,0 +1,245 @@
+[
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Asus_ZenFone.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Xiaomi Mi Band 2",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Xiaomi_Mi.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"LG 43UH610V",
+    "product_category":"Electronics",
+    "product_comment":"Goods of the week",
+    "product_group":"Trending",
+    "img_src":"images/goods/LG_43UH610V.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Apple iMac 27 Retina 5K",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Apple_mac_27.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus Condi ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"New product",
+    "product_group":"New",
+    "img_src":"images/goods/Asus_Condi.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Electrolux EZB 52410 AK",
+    "product_category":"electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Electrolux_EZB.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Asus_ZenFone.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Xiaomi Mi Band 2",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Xiaomi_Mi.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"LG 43UH610V",
+    "product_category":"Electronics",
+    "product_comment":"Goods of the week",
+    "product_group":"Trending",
+    "img_src":"images/goods/LG_43UH610V.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Apple iMac 27 Retina 5K",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Apple_mac_27.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus Condi ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"New product",
+    "product_group":"New",
+    "img_src":"images/goods/Asus_Condi.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Electrolux EZB 52410 AK",
+    "product_category":"electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Electrolux_EZB.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Asus_ZenFone.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Xiaomi Mi Band 2",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Xiaomi_Mi.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"LG 43UH610V",
+    "product_category":"Electronics",
+    "product_comment":"Goods of the week",
+    "product_group":"Trending",
+    "img_src":"images/goods/LG_43UH610V.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Apple iMac 27 Retina 5K",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Apple_mac_27.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus Condi ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"New product",
+    "product_group":"New",
+    "img_src":"images/goods/Asus_Condi.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Electrolux EZB 52410 AK",
+    "product_category":"electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Electrolux_EZB.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Beats studio wireless",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Beats_studio.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Nikon D3300 Kit",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Nikon_D3300.png",
+    "product_price":"$ 384.4"
+  },
+
+  {
+    "product_name":"Asus ZenFone Go ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Asus_ZenFone.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Xiaomi Mi Band 2",
+    "product_category":"Electronics",
+    "product_comment":"Bestseller",
+    "product_group":"Popular",
+    "img_src":"images/goods/Xiaomi_Mi.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"LG 43UH610V",
+    "product_category":"Electronics",
+    "product_comment":"Goods of the week",
+    "product_group":"Trending",
+    "img_src":"images/goods/LG_43UH610V.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Apple iMac 27 Retina 5K",
+    "product_category":"Electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Apple_mac_27.png",
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Asus Condi ZB452KG",
+    "product_category":"Electronics",
+    "product_comment":"New product",
+    "product_group":"New",
+    "img_src":"images/goods/Asus_Condi.png",  
+    "product_price":"$ 384.4"
+  },
+  {
+    "product_name":"Electrolux EZB 52410 AK",
+    "product_category":"electronics",
+    "product_comment":"Recommend",
+    "product_group":"Trending",
+    "img_src":"images/goods/Electrolux_EZB.png",
+    "product_price":"$ 384.4"
+  }
+]

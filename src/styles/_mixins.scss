@@ -25,7 +25,7 @@
     }
     .text{
       font-size: 14px;
-      font-family: 'Roboto-Medium'; 
+      font-family: $mediumFontFamily; 
       color: #808080;
     }
   }
@@ -50,14 +50,14 @@
 
   .number{
     font-size: 16px;
-    font-family: 'Roboto-Bold'; 
+    font-family: $boldFontFamily; 
     color: #808080;
     margin-left:7px;
   }
 
   .text{
     font-size: 12px;
-    font-family: 'Roboto-Bold'; 
+    font-family: $mediumFontFamily; 
 
   }
 
