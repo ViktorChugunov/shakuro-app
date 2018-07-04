@@ -1,6 +1,8 @@
+@import '_variables';
+
 body{
-  min-width: 600px;
-  font-family: 'Roboto-Medium';
+  //min-width: 600px;
+  font-family: $mediumFontFamily;
 }
 
 *{

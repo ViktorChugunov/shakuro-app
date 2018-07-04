@@ -1,43 +1,54 @@
 .footer
   .footet-top
     .user-list-box
-      ul.footer-top-list
-        li.footer-top-list-item
-          span.icon
-          span.text Users
-        -
-          var list = [
-            ["Payment", "/electronics"], ["Delivery", "/appliances"], ["Return and exchange", "/childens_goods"], 
-            ["Help with the service", "/repair"], ["Terms of use", "/clothes"], ["Feedback", "/footwear"]
-          ];
-        - for (var x = 0; x < list.length; x++)
-          li.footer-top-list-item
-            a.footer-top-list-item-link(href=list[x][1])= list[x][0]
+      .user-list-title
+          span.user-icon
+          span.user-list-title-name Users
+      .user-list-columns
+        .user-list-first-column
+          p.user-list-first-column-item
+            a.user-list-item-link(href='') Payment
+          p.user-list-first-column-item
+            a.user-list-item-link(href='') Delivery
+          p.user-list-first-column-item
+            a.user-list-item-link(href='') Return and exchange
+        .user-list-second-column
+          p.user-list-second-column-item
+            a.user-list-item-link(href='') Help with the service
+          p.user-list-second-column-item
+            a.user-list-item-link(href='') Terms of use
+          p.user-list-second-column-item
+            a.user-list-item-link(href='') Feedback
     .shopping-list-box
-      ul.footer-top-list
-        li.footer-top-list-item
-          span.icon
-          span.text Shopping
-        -
-          var list = [
-            ["Connectivity", "/electronics"], ["Help for shops", "/appliances"], ["Dashboard", "/childens_goods"], 
-            ["Storehouse", "/repair"], ["Terms of use", "/clothes"], ["Feedback", "/footwear"]
-          ];
-        - for (var x = 0; x < list.length; x++)
-          li.footer-top-list-item
-            a.footer-top-list-item-link(href=list[x][1])= list[x][0]
+      .shopping-list-title
+          span.shopping-icon
+          span.shopping-list-title-name Shopping
+      .shopping-list-columns
+        .shopping-list-first-column
+          p.shopping-list-first-column-item
+            a.shopping-list-item-link(href='') Connectivity
+          p.shopping-list-first-column-item
+            a.shopping-list-item-link(href='') Help for shops
+          p.shopping-list-first-column-item
+            a.shopping-list-item-link(href='') Dashboard
+        .shopping-list-second-column
+          p.shopping-list-second-column-item
+            a.shopping-list-item-link(href='') Storehouse
+          p.shopping-list-second-column-item
+            a.shopping-list-item-link(href='') Terms of use
+          p.shopping-list-second-column-item
+            a.shopping-list-item-link(href='') Feedback
     .statistic-list-box
-      ul.footer-top-list
-        li.footer-top-list-item
-          span.icon
-          span.text Statistic
-        li.footer-top-list-item
-          span.number 453 034 
-          span.text Goods
-        li.footer-top-list-item
-          span.number 2 545 
-          span.text Shops
-        li.footer-top-list-item-align
+      .statistic-list-title
+          span.statistic-icon
+          span.statistic-list-title-name Statistic
+      .statistic-list
+          p.statistic-list-item
+            span.statistic-number 453 034 
+            span.statistic-text Goods
+          p.statistic-list-item
+            span.statistic-number 2 545 
+            span.statistic-text Shops
   .footer-bottom
     .footer-bottom-list
       - var list = [ ["Mobile version", "/mobile_version"], ["Statistics", "/statistics"], ["Advertising", "/advertising"] ];

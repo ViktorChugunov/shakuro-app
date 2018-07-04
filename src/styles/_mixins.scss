@@ -1,6 +1,5 @@
 @mixin bottomListStyle($icon_src, $listMargin, $liWidth) {
-  width: 212px;   
-  margin-left: $listMargin; 
+  
   .footer-top-list{
     display: flex;
     flex-direction: column;

@@ -2,8 +2,12 @@
 @import '_mixins';
 
 .slider{
-  width: $content-width;
-  height: 330px;
+  max-width: 1080px;
+  max-height: 330px;
+  //min-width: 700px;
+  //min-height: 330px;
+  height: 32.7272vw;
+
   margin:0 auto;
   display: flex;
   flex-direction: row;
@@ -11,8 +15,9 @@
   align-items: center;
   margin-top: 30px;
   //background: url('../images/slider/slide-5.png');
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  //background-size: 1100px 330px;
 }
 
 .slider-arrow-back{
@@ -48,7 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   align-self: center;
   height: 70%;
 }
@@ -64,7 +69,7 @@
   font-family: $mediumFontFamily; 
   background-color: #FF004F;
   border-radius: 15px;
-  margin-bottom: 53px;
+  //margin-bottom: 53px;
   &:hover{
     cursor: pointer;
   }
@@ -74,10 +79,11 @@
   color: #FFFFFF;
   font-size: 36px;
   font-family: $mediumFontFamily; 
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
 }
 
 .slider-description{
+  height: 30px;
   color: #FFFFFF;
   font-size: 14px;
 }    

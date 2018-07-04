@@ -1,6 +1,10 @@
 @import '_variables';
 @import '_mixins';
 
+//@include bottomListStyle('../images/icons/users.png', 8px, 190px);
+//@include bottomListStyle('../images/icons/shops.png', 250px, 150px);
+//@include bottomListStyle('../images/icons/statistic.png', 200px, 220px);
+
 .footer{
   width: 100%;
   border-top: 1px solid #EBEBEB;
@@ -8,25 +12,197 @@
 
 .footet-top{
   margin: 0 auto;
-  width: $content-width;
-  height: 210px;
+  margin-top: 54px;
+  margin-bottom: 30px;
+  max-width: 1080px;
+  //min-height: 208px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.user-list-box{
+  //width: 212px;
+  //margin-top: 54px;
+  //margin-bottom: 30px;
+}
+
+.user-list-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 27px;
+  color: #808080;
+}
+
+.user-icon{
+  margin-left: 5px;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/icons/users.png');
+  //background-position: -138px 0;
+  //margin-right: 23px;
+}
+
+.user-list-title-name{
+  font-size: 14px;
+  font-family: $mediumFontFamily; 
+  color: #808080;
+  margin-left: 32px;
+}
+
+.user-list-columns{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.user-list-box{
-  @include bottomListStyle('../images/icons/users.png', 8px, 190px);
+.user-list-first-column{
+  width: 243px;
+  padding-left: 60px
 }
 
+.user-list-second-column{
+  width: 227px;
+  margin-left: 0px
+}
+
+.user-list-first-column-item, .user-list-second-column-item{
+  //margin-top: 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #B2B2B2;
+  width: 200px;
+}
+
+.user-list-item-link{
+  font-size: 13px;
+  color: #B2B2B2;
+  text-decoration: none;
+  margin-left: 7px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+///////////////////////////////////////
 .shopping-list-box{
-  @include bottomListStyle('../images/icons/shops.png', 250px, 150px);
+  //width: 212px;
+  //margin-top: 54px;
+  //margin-bottom: 30px;
 }
 
+.shopping-list-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 27px;
+  color: #808080;
+}
+
+.shopping-icon{
+  margin-left: 5px;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/icons/shops.png');
+  //background-position: -138px 0;
+}
+
+.shopping-list-title-name{
+  font-size: 14px;
+  font-family: $mediumFontFamily; 
+  color: #808080;
+  margin-left: 32px;
+}
+
+.shopping-list-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.shopping-list-first-column{
+  width: 226px;
+  padding-left: 57px
+}
+
+.shopping-list-second-column{
+  width: 162px;
+  margin-left: 0px
+}
+
+.shopping-list-first-column-item, .shopping-list-second-column-item{
+  //margin-top: 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #B2B2B2;
+  width: 200px;
+}
+
+.shopping-list-item-link{
+  font-size: 13px;
+  color: #B2B2B2;
+  text-decoration: none;
+  margin-left: 7px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+///////////////////////////////////////
 .statistic-list-box{
-  @include bottomListStyle('../images/icons/statistic.png', 200px, 220px);
+  //width: 212px;
+  //margin-top: 54px;
+  //margin-bottom: 30px;
 }
 
+.statistic-list-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #808080;
+}
+
+.statistic-icon{
+  margin-left: 5px;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/icons/statistic.png');
+  //background-position: -138px 0;
+}
+
+.statistic-list-title-name{
+  font-size: 14px;
+  font-family: $mediumFontFamily; 
+  color: #808080;
+  margin-left: 32px;
+}
+
+.statistic-list{
+  width: 215px;
+  padding-left: 57px
+}
+
+.statistic-list-item{
+  margin-bottom: 10px;
+}
+
+.statistic-number{
+  font-size: 16px;
+  font-family: $boldFontFamily; 
+  color: #808080;
+  margin-left:7px;
+}
+
+.statistic-text{
+  color: #B2B2B2;
+  font-size: 12px;
+  font-family: $mediumFontFamily;
+}
+/////////////////////////////////////////////
 .footer-bottom{
   border-top: 1px solid #EBEBEB;
   height: 88px;

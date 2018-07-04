@@ -2,15 +2,20 @@
 @import '_mixins';
 
 .viewed-products-box{
-  width: $content-width;
+  max-width: 1080px;
   margin: 0 auto;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .viewed-products-box-title{
+  max-width: 1080px;
   height: 30px;
   display: flex;
   flex-direction: row;
+  color: #808080;
+  margin-left: 23px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .viewed-products-box-eye-icon{
@@ -20,22 +25,19 @@
   background: url('../images/icons/icons.png') no-repeat;
   background-position: -138px 0;
 }
-
-.viewed-products-box-title{
-  color: #808080;
-  margin-left: 23px;
-  font-size: 18px;
-  line-height: 30px;
-}
         
 .viewed-products-list{
+  max-width: 1080px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  //justify-content: space-between;
   list-style-type: none;
-  height: 120px;
-  margin-bottom: 60px;
-  padding-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .viewed-products-list-item{
@@ -47,6 +49,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .viewed-products-image{
