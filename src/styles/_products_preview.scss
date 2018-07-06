@@ -1,6 +1,10 @@
 @import '_variables';
 @import '_mixins';
 
+.products-preview-box{
+  border-bottom: 1px solid #EBEBEB;
+}
+
 .products-preview{
   max-width: 1080px;
   //min-width: 700px;

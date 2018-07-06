@@ -1,10 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-//@include bottomListStyle('../images/icons/users.png', 8px, 190px);
-//@include bottomListStyle('../images/icons/shops.png', 250px, 150px);
-//@include bottomListStyle('../images/icons/statistic.png', 200px, 220px);
-
 .footer{
   width: 100%;
   border-top: 1px solid #EBEBEB;
@@ -38,12 +34,10 @@
 
 .user-icon{
   margin-left: 5px;
-  background-size: 30px;
-  width: 30px;
   height: 30px;
-  background-image: url('../images/icons/users.png');
-  //background-position: -138px 0;
-  //margin-right: 23px;
+  width: 30px;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -470px 0;
 }
 
 .user-list-title-name{
@@ -103,11 +97,10 @@
 
 .shopping-icon{
   margin-left: 5px;
-  background-size: 30px;
-  width: 30px;
   height: 30px;
-  background-image: url('../images/icons/shops.png');
-  //background-position: -138px 0;
+  width: 30px;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -378px 0;
 }
 
 .shopping-list-title-name{
@@ -167,11 +160,10 @@
 
 .statistic-icon{
   margin-left: 5px;
-  background-size: 30px;
-  width: 30px;
   height: 30px;
-  background-image: url('../images/icons/statistic.png');
-  //background-position: -138px 0;
+  width: 30px;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -438px 0;
 }
 
 .statistic-list-title-name{

@@ -4,8 +4,6 @@
 .slider{
   max-width: 1080px;
   max-height: 330px;
-  //min-width: 700px;
-  //min-height: 330px;
   height: 32.7272vw;
 
   margin:0 auto;
@@ -14,20 +12,37 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  //background: url('../images/slider/slide-5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slider-arrow-back{
-  background: url('../images/icons/ic_arrow_back.png') center no-repeat;
   margin-left: 30px;
 }
 
+.slider-arrow-back:before{
+  content:"";
+  position: absolute;
+  margin: 14px 15px 15px 14px;
+  height: 30px;
+  width: 30px;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -200px 0;
+}
+
 .slider-arrow-forward{
-  background: url('../images/icons/ic_arrow_forward.png') center no-repeat;
   margin-right: 30px;
+}
+
+.slider-arrow-forward:before{
+  content:"";
+  position: absolute;
+  margin: 14px 15px 15px 14px;
+  height: 30px;
+  width: 30px;
+  background: url('../images/icons/icons.png') no-repeat;
+  background-position: -230px 0;
 }
 
 .slider-arrow-back, .slider-arrow-forward{
@@ -35,7 +50,6 @@
   height: 60px;
   border: 2px solid rgba(255, 255, 255, .3);
   border-radius: 30px;
-  background-size: 30px 30px;
   &:hover{
     cursor: pointer;
   }
