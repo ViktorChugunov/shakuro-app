@@ -1,8 +1,9 @@
 @import '_variables';
 @import '_mixins';
 
+
 .header{
-  min-width: 800px;
+  width: 100%;
   height: 150px;
 }
 
@@ -87,14 +88,6 @@
   }
 }
 
-/*
-.header-logo-link{
-  width: 40px;
-  height: 40px;
-  display: block;
-  height: 100%;
-}*/
-
 .header-user-bar{
   display: flex;
   flex-direction: row;
@@ -165,11 +158,9 @@
 }
 
 .header-bottom{
-  height: 58px;
+  height: 62px;
   border-top: 2px solid #F5F5F5;
   border-bottom: 2px solid #EBEBEB;
-  //border-left-style: none;
-  //border-right-style: none;
   display: flex;
   justify-content: center;
 }

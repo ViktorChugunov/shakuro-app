@@ -102,9 +102,10 @@ export class SubscribeForm extends React.Component {
   render() {
     return (
       <div className="subscribe">
-        <div className="subscribe-box-title"></div>
-        <div className="subscribe-box-title-opened-envelope-icon"></div>
-        <div className="subscribe-box-title-text">Learn about profitable offers and get personal recommendations</div>
+        <div className="subscribe-box-title">
+          <div className="subscribe-box-title-opened-envelope-icon"></div>
+          <div className="subscribe-box-title-text">Learn about profitable offers and get personal recommendations</div>
+        </div>
         <div className="subscribe-box-field">
           <div className="subscribe-box-form-closed-envelope-icon"></div>
           <input className={this.state.subscribeBoxEmailInput} type="email" placeholder="Your e-mail" onChange={this.checkEmail} onBlur={this.onBlurInput}/>

@@ -83,6 +83,7 @@
   font-family: $mediumFontFamily; 
   background-color: #FF004F;
   border-radius: 15px;
+  margin-top: 23px;
   //margin-bottom: 53px;
   &:hover{
     cursor: pointer;
@@ -131,11 +132,21 @@
 
 
 
+
 .example-appear {
   opacity: 0.01;
 }
 
 .example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
   opacity: 1;
   transition: opacity 2s ease-in;
 }

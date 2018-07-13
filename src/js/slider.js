@@ -73,7 +73,11 @@ export class Slider extends React.Component {
         }
       }
     return (
-      <ReactCSSTransitionGroup transitionName="example" transitionLeave={true} transitionAppear={true} transitionAppearTimeout={2000} transitionEnterTimeout={2000} transitionLeaveTimeout={2000} component="slider" >
+      <ReactCSSTransitionGroup transitionName="example" component="div"
+      transitionAppear={true}
+      transitionAppearTimeout={2000}
+      transitionEnter={true}
+      transitionLeave={false}>
         <div className="slider" style={{ backgroundImage: "url(" + slider_info[this.state.slideNumber]['img_src'] + ")" }} >
           <div className="slider-arrow-back" onClick={this.previousImage}></div>
           <div className="slider-middle">
