@@ -1,13 +1,13 @@
 @import '_variables';
 @import '_mixins';
 
-@media only screen and (min-width: 1080px){
+@media only screen and (min-width: 1128px){
   .products-preview-box{
-    //margin: 0 24px;
+    margin: 0 24px;
   }
   .products-preview{
     width: 1080px;
-    margin:0 auto;
+    margin: 0 auto;
   }
   .products-bar{
     display: flex;
@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 1024px){
+@media only screen and (max-width: 1127px) and (min-width: 1024px){
   .products-preview-box{
     margin: 0 24px;
   }
@@ -69,7 +69,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 760px){
+@media only screen and (max-width: 1023px) and (min-width: 760px){
   .products-preview-box{
     margin: 0 24px;
   }
@@ -103,7 +103,7 @@
   }
 }
 
-@media only screen and (max-width: 760px) and (min-width: 510px){
+@media only screen and (max-width: 759px) and (min-width: 510px){
   .products-preview-box{
     margin: 0 24px;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 509px){
   .products-preview-box{
     margin: 0 24px;
   }
